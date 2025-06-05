@@ -1,18 +1,43 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <title>Button with Image</title>
   <style>
-body {
-  background-image: url('img_girl.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed; 
-  background-size: 100% 100%;
-}
-</style>
+    body {
+      background-image: url('img_girl.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+      background-size: 100% 100%;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+      padding-top: 50px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 8px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+    }
+    button img {
+      vertical-align: middle;
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+    }
+  </style>
+</head>
 <body>
- 
-<h1>The button Element</h1>
 
-<button type="button" onclick="alert('Hello world!')"><img src="downloads (2).jpeg" alt="Dinosaur" />Click Me!</button>
- 
+  <h1>The Button Element</h1>
+
+  <button type="button" onclick="alert('Hello world!')">
+    <img src="downloads (2).jpeg" alt="Dinosaur Icon" />
+    Click Me!
+  </button>
+
 </body>
 </html>
