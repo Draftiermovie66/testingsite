@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Button with Image</title>
+  <title>Round Image Button with Text</title>
   <style>
     body {
-      background-image: url('https://www.w3schools.com/w3images/lights.jpg');
+      background-image: url('img_girl.jpg');
       background-repeat: no-repeat;
       background-attachment: fixed; 
       background-size: 100% 100%;
@@ -13,30 +13,38 @@
       text-align: center;
       padding-top: 50px;
     }
+
     button {
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
       border: none;
-      border-radius: 8px;
-      background-color: rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+      background-image: url('downloads (2).jpeg');
+      background-size: cover;
+      background-position: center;
+      position: relative;
       color: white;
+      font-size: 18px;
+      font-weight: bold;
+      text-shadow: 1px 1px 3px black;
     }
-    button img {
-      vertical-align: middle;
-      width: 20px;
-      height: 20px;
-      margin-right: 8px;
+
+    button span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
     }
   </style>
 </head>
 <body>
 
-  <h1>The Button Element</h1>
+  <h1>Round Button with Text</h1>
 
   <button type="button" onclick="alert('Hello world!')">
-    <img src="downloads (2).jpeg" alt="Dinosaur Icon" />
-    Click Me!
+    <span>Click</span>
   </button>
 
 </body>
